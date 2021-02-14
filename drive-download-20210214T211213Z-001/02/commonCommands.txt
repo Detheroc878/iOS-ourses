@@ -1,0 +1,123 @@
+створити
+	git init
+
+клонувати
+	git clone [url]
+
+перевірити налаштування git
+	git config --global user.name
+	git config --global user.email 
+	git config --global user.name "new name"
+	git config --global user.email "new email"
+
+	--global
+	--local
+	--system
+
+	git config --global color.ui auto
+
+додати файл
+	echo "asdasd" >> Test.txt
+
+глянути статус
+	git status
+	git status -s (short)
+
+додати зміни в файл
+	echo "appended text" >> Test.txt
+
+відкрити файл
+	open -n Text.txt
+
+глянути verbose status
+	git status -v
+
+видалити файл з доданих файлів
+	git reset Test.txt
+
+видалити файл (фізично)
+	git rm fileName
+
+пересунути файл
+	git mv file_from file_to
+
+різниця між файлами які вже додані але не підтверджені
+	git diff --staged
+
+закомітити
+	git commit -m 'initial project version'
+
+відмінити коміт/зміни
+	git commit --amend
+	git reset HEAD^
+
+перегляд гілок
+	git branch
+
+додадти гілку
+	git branch <Name>
+
+перемкнути
+	git checkout <Name>
+
+обєднати
+	git merge
+
+вирішення конфліктів
+
+
+rebase
+	git rebase основна гілка
+
+видалення гілки
+	git branch -d 
+
+тимяасова схованка
+	git stash
+
+перегляд схованок
+	git stash list
+
+активувати тимчасову схованку
+	git stash pop
+
+видалити зміни в схованці
+	git stash drop
+
+додати віддалене сховище
+	git remote add
+	git remote add origin git@github.com:User/UserRepo.git
+
+перегляд віддалених гілок
+	git remote -v
+
+витягнути зміни
+	git fetch
+
+витягнути зміни з гілки
+	git pull
+
+зберегти зміни віддалено
+	git push
+
+створити гілку
+	git push origin name_of_your_new_branch
+
+видалити гілку
+	git push origin --delete the_remote_branch
+
+додати tag
+	git tag -a v1.4 -m "my version 1.4" (annotation, message)
+
+переглянути теги
+	git tag -l (-list)
+
+показати коміт тегу
+	git show v1.4-lw
+
+переглянути файли тегу
+	git checkout 2.0.0
+
+
+
+
